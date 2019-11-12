@@ -5,7 +5,10 @@ class Input extends StatelessWidget {
   String label = '';
   MoneyMaskedTextController ctrl = MoneyMaskedTextController();
 
-  Input({@required this.label, @required this.ctrl});
+  Input({
+    @required this.label,
+    @required this.ctrl,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -17,9 +20,10 @@ class Input extends StatelessWidget {
           child: Text(
             this.label,
             style: TextStyle(
-                color: Colors.white,
-                fontSize: 35,
-                fontFamily: 'Big Shoulders Display'),
+              color: Colors.white,
+              fontSize: 35,
+              fontFamily: 'Big Shoulders Display',
+            ),
           ),
         ),
         SizedBox(
@@ -30,10 +34,13 @@ class Input extends StatelessWidget {
             controller: this.ctrl,
             keyboardType: TextInputType.number,
             style: TextStyle(
-                color: Colors.white,
-                fontSize: 45,
-                fontFamily: 'Big Shoulders Display'),
-            decoration: InputDecoration(border: InputBorder.none),
+              color: Colors.white,
+              fontSize: 45,
+              fontFamily: 'Big Shoulders Display',
+            ),
+            decoration: InputDecoration(
+              border: InputBorder.none,
+            ),
           ),
         ),
       ],

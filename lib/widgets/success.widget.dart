@@ -16,8 +16,9 @@ class Success extends StatelessWidget {
     return Container(
       margin: EdgeInsets.all(30),
       decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.8),
-          borderRadius: BorderRadius.circular(25)),
+        color: Colors.white.withOpacity(0.8),
+        borderRadius: BorderRadius.circular(25),
+      ),
       child: Column(
         children: <Widget>[
           SizedBox(
@@ -26,9 +27,10 @@ class Success extends StatelessWidget {
           Text(
             this.result,
             style: TextStyle(
-                color: Theme.of(context).primaryColor,
-                fontSize: 40,
-                fontFamily: 'Big Shoulders Display'),
+              color: Theme.of(context).primaryColor,
+              fontSize: 40,
+              fontFamily: 'Big Shoulders Display',
+            ),
             textAlign: TextAlign.center,
           ),
           SizedBox(
